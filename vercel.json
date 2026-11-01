@@ -1,9 +1,12 @@
 {
   "rewrites": [
     {
-      "source": "/:path*",
-      "destination": "https://leopardbsc.figma.site/:path*"
+      "source": "/",
+      "destination": "https://leopardbsc.figma.site/"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "https://leopardbsc.figma.site/$1"
     }
   ]
 }
-
